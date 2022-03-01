@@ -11,8 +11,8 @@ jobs:
     steps:
       - node/install:
           node-version: '17.5.0'
-      - checkout:
-      - aws-cli/setup:
+      - checkout
+      - aws-cli/setup
 
       - run:
           name: Front-End Install
