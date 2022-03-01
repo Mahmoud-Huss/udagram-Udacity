@@ -2,26 +2,18 @@
 version: 2.1
 orbs:
   node: circleci/node@5.0.0
-<<<<<<< HEAD
-  aws-cli: circleci/aws-cli@12
-=======
+
   aws-cli: circleci/aws-cli@2
->>>>>>> 44d55fd8f09ccc6730039383fb7c5c379edba514
 jobs:
   build:
     docker:
       - image: "cimg/base:stable"
     steps:
       - node/install:
-<<<<<<< HEAD
           node-version: '17.5.0'
       - checkout:
       - aws-cli/setup:
-=======
-          node-version: '117.5.0'
-      - checkout
-      - aws-cli/setup
->>>>>>> 44d55fd8f09ccc6730039383fb7c5c379edba514
+
       - run:
           name: Front-End Install
           command: |
