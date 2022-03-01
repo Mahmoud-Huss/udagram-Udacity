@@ -1,14 +1,15 @@
 
 version: 2.1
 orbs:
-  node: circleci/node@17.5.0
-  aws-cli: circleci/aws-cli@2.4.18
+  node: circleci/node@5.0.0
+  aws-cli: circleci/aws-cli@2
 jobs:
   build:
     docker:
       - image: "cimg/base:stable"
     steps:
-      - node/install
+      - node/install:
+          node-version: '117.5.0'
       - checkout
       - aws-cli/setup
       - run:
