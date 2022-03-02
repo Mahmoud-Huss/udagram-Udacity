@@ -25,6 +25,9 @@ jobs:
           background: true
           command: npm run webdriver:start
       - run:
+          name: Update webdriver-manager
+          command: webdriver-manager update
+      - run:
           name: Front-End Install
           command: |
             npm run frontend:install
