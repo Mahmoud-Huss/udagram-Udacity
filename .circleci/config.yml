@@ -17,16 +17,9 @@ jobs:
       - run:
           name: Update protractor
           command: npm install protractor@latest --save-dev
-      - run: 
-          name: "Install webdriver"
-          command: npm install -g webdriver-manager
       - run:
-          name: Update webdriver-manager
-          command: webdriver-manager update
-      - run: 
-          name: "Start webdriver"
-          background: true
-          command: webdriver-manager start
+          name:
+          command: node node_modules/protractor/bin/webdriver-manager update      
       - run:
           name: Front-End Install
           command: |
