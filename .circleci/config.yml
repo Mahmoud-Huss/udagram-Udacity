@@ -7,7 +7,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: "cimg/base:stable"
+      - image: circleci/node:10-browsers
     steps:
       - node/install:
           node-version: '17.5.0'
@@ -16,7 +16,7 @@ jobs:
       - browser-tools/install-chrome
       - browser-tools/install-chromedriver
       - run: 
-          name: "Install and update webdriver"
+          name: "Install webdriver"
           command: npm install -g webdriver-manager
       - run: 
           name: "Start webdriver"
