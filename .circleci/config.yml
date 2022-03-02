@@ -20,13 +20,13 @@ jobs:
       - run: 
           name: "Install webdriver"
           command: npm install -g webdriver-manager
-      - run: 
-          name: "Start webdriver"
-          background: true
-          command: npm run webdriver:start
       - run:
           name: Update webdriver-manager
           command: webdriver-manager update
+      - run: 
+          name: "Start webdriver"
+          background: true
+          command: webdriver-manager start
       - run:
           name: Front-End Install
           command: |
