@@ -14,7 +14,7 @@ jobs:
       - checkout
       - aws-cli/setup
       - browser-tools/install-browser-tools:
-          chrome-version: 75.0.3770.90
+          chrome-version: '75.0.3770.90'
       - run: 
           name: "Install webdriver"
           command: npm install -g webdriver-manager
