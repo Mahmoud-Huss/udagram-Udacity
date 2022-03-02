@@ -6,7 +6,8 @@
         "frontend:build": "cd udagram/udagram-frontend && npm run build",
         "backend:build": "cd udagram/udagram-api && npm run build",
         "frontend:deploy": "cd udagram/udagram-frontend && npm run deploy",
-        "frontend:e2e": "cd udagram/udagram-frontend && npm run e2e"
+        "frontend:e2e": "cd udagram/udagram-frontend && npm run e2e",
+        "webdriver:start": "webdriver-manager start"
 
     },
     "devDependencies": {}
