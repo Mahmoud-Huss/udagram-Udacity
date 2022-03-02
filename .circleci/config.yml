@@ -3,6 +3,7 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.0
   aws-cli: circleci/aws-cli@2
+  browser-tools: circleci/browser-tools@1.2.4
 jobs:
   build:
     docker:
@@ -12,6 +13,8 @@ jobs:
           node-version: '17.5.0'
       - checkout
       - aws-cli/setup
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
       - run: 
           name: "Install and update webdriver"
           command: npm install -g webdriver-manager
