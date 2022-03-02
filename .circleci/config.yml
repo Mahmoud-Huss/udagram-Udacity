@@ -21,7 +21,7 @@ jobs:
       - run: 
           name: "Start webdriver"
           background: true
-          command: npm run webdriver:start
+          command: npm run webdriver:start && chrome --version
       - run:
           name: Front-End Install
           command: |
