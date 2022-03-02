@@ -19,7 +19,7 @@ jobs:
           command: npm install protractor@latest --save-dev
       - run:
           name:
-          command: node node_modules/protractor/bin/webdriver-manager update      
+          command: node node_modules/protractor/bin/webdriver-manager update --versions.chrome 2.24    
       - run:
           name: Front-End Install
           command: |
