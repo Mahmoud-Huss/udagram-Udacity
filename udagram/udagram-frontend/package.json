@@ -9,7 +9,7 @@
     "build": "export NODE_OPTIONS=--openssl-legacy-provider; ng build",
     "test": "export NODE_OPTIONS=--openssl-legacy-provider; ng test --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
-    "e2e": "export NODE_OPTIONS=--openssl-legacy-provider; ng e2e --protractor -config=e2e/protractor-ci.conf.js",
+    "e2e": "export NODE_OPTIONS=--openssl-legacy-provider; ng e2e -config=e2e/protractor-ci.conf.js",
     "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh"
   },
   "private": true,
