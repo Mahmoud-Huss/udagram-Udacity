@@ -2,7 +2,6 @@
 version: 2.1
 orbs:
   node: circleci/node@5.0.0
-
   aws-cli: circleci/aws-cli@2
 jobs:
   build:
@@ -33,7 +32,7 @@ jobs:
       - run:
           name: Test App
           command: |
-            npm run frontend:test
+            npm run frontend:e2e
       - run:
           name: Deploy App
           command: |
