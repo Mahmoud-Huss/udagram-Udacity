@@ -13,7 +13,7 @@ jobs:
       - checkout
       - aws-cli/setup
       - run: 
-          name: Install Chromedriver latest version
+          name: Install Chrome latest version
           command: |
             sudo apt-get update &&
             sudo apt-get install lsb-release libappindicator3-1 &&
