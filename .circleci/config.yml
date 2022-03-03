@@ -16,7 +16,7 @@ jobs:
       - browser-tools/install-chrome
       - run:
           name: Install webdriver-manager
-          command: apt install webdriver-manager
+          command: sudo apt install webdriver-manager
       - run:
           name: Clean and update webdriver
           command: webdriver-manager clean && webdriver-manager update
