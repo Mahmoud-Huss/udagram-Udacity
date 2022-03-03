@@ -13,13 +13,7 @@ jobs:
           node-version: '17.5.0'
       - checkout
       - aws-cli/setup
-      - browser-tools/install-chrome
-      - run:
-          name: Install webdriver-manager
-          command: npm i -g webdriver-manager
-      - run:
-          name: Clean and update webdriver
-          command: webdriver-manager clean && webdriver-manager update
+      - browser-tools/install-chrome@75.0.3770.90
       - run:
           name: Front-End Install
           command: |
