@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/node:16.13.1-browsers
+      - image: circleci/node:10-browsers
     steps:
       - node/install:
           node-version: "17.5.0"
