@@ -13,7 +13,8 @@ jobs:
           node-version: '17.5.0'
       - checkout
       - aws-cli/setup
-      - browser-tools/install-chrome@75.0.3770.90
+      - browser-tools/install-chrome:
+          chrome-version: 75.0.3770.90
       - run:
           name: Front-End Install
           command: |
