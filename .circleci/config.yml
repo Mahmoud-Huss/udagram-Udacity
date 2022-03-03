@@ -15,11 +15,11 @@ jobs:
       - aws-cli/setup
       - browser-tools/install-chrome
       - run:
-          name: Update protractor
-          command: npm install protractor@latest --save-dev
+          name: Install webdriver-manager
+          command: apt install webdriver-manager
       - run:
-          name:
-          command: node node_modules/protractor/bin/webdriver-manager update --versions.chrome 2.24    
+          name: Clean and update webdriver
+          command: webdriver-manager clean && webdriver-manager update
       - run:
           name: Front-End Install
           command: |
